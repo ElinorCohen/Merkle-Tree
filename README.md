@@ -39,6 +39,31 @@ Each command must be entered in a separate line:
 
 ---
 
+## 🌿 Proof Encoding Format
+
+To ensure accurate verification of inclusion proofs, each sibling in the path is **prefixed with a direction marker**:
+
+- `0` indicates the sibling is on the **left**
+- `1` indicates the sibling is on the **right**
+
+The Merkle proof is then encoded as a sequence of:
+```bash
+<bit><sibling_hash>
+```
+For example:
+```bash
+Proof for leaf at index 1:
+1a2b3c... (right sibling)
+03f4e2... (left sibling)
+
+Encoded as:
+1<a2b3c...> 0<3f4e2...>
+
+This convention allows the verification function to reconstruct the correct path to the root by combining the hashes in the proper order.
+```
+
+---
+
 ## ▶️ How to Run the Script
 
 ### 🔧 Prerequisites
