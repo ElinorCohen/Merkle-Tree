@@ -81,7 +81,7 @@ pip install cryptography
    python3 merkle.py
    ```
 2. Then enter commands manually, after entering, press Enter, and if there is an output, it will be printed.
-3. To exit the program: press `Ctrl + Z` (Due to your OS)
+3. To exit the program: press `Ctrl + Z` (Depending on your OS)
 
 ---
 
