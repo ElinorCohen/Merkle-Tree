@@ -58,9 +58,9 @@ Proof for leaf at index 1:
 
 Encoded as:
 1<a2b3c...> 0<3f4e2...>
+```
 
 This convention allows the verification function to reconstruct the correct path to the root by combining the hashes in the proper order.
-```
 
 ---
 
