@@ -52,7 +52,10 @@ The Merkle proof is then encoded as a sequence of:
 
 For example, Proof for leaf at index 1:
 
-```1a2b3c... (right sibling)\n 03f4e2... (left sibling)```
+```bash
+1a2b3c... (right sibling)
+03f4e2... (left sibling)
+```
 
 Encoded as:
 
