@@ -47,14 +47,16 @@ To ensure accurate verification of inclusion proofs, each sibling in the path is
 - `1` indicates the sibling is on the **right**
 
 The Merkle proof is then encoded as a sequence of: 
+
 ```<bit><sibling_hash>```
 
 For example, Proof for leaf at index 1:
-1a2b3c... (right sibling)
-03f4e2... (left sibling)
+
+```1a2b3c... (right sibling)\n 03f4e2... (left sibling)```
 
 Encoded as:
-1<a2b3c...> 0<3f4e2...>
+
+```1<a2b3c...> 0<3f4e2...>```
 
 
 This convention allows the verification function to reconstruct the correct path to the root by combining the hashes in the proper order.
